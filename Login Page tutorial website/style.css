@@ -1,290 +1,277 @@
-*{
-	padding: 0%;
-	margin: 0%;
-	list-style: none;
-	text-decoration: none;
-
-	 
+* {
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
 }
 
-body{
-	font-family: serif;
+body {
+    font-family: serif;
 }
 /* nav{
 	position: fixed;
 } */
-.main{
-	
-	background: linear-gradient(to top,rgba(52, 54, 53)50%,
-	rgba(52, 54, 53)50%);
-	height: 45px;
-	width: 100%;
-	position: sticky;
-	top: 0;
- 
+.main {
+    background: linear-gradient(
+        to top,
+        rgba(52, 54, 53) 50%,
+        rgba(52, 54, 53) 50%
+    );
+    height: 45px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+label.logo {
+    color: orangered;
+    font-size: 35px;
+    padding: 0 100px;
+    line-height: 50px;
+    font-weight: bold;
+    float: left;
+}
+ul {
+    overflow: auto;
+    float: left;
+    align-items: center;
+    padding-top: 1%;
+    padding-left: 15%;
+}
+ul li {
+    display: inline-block;
+    line-height: 100%;
+    margin: 0 5px;
+}
+ul li a {
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(255, 72, 0);
+    transition: 0.5s ease-in-out;
+}
+.search {
+    width: 330px;
+    float: left;
+    margin-left: 12px;
+}
+.srch {
+    font-family: "Times New Roman";
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid orangered;
+    margin-top: 8px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
 
-    
-	 
-}	 
-label.logo{
-	color: orangered;
-	font-size: 35px;
-	padding: 0 100px; 
-	line-height: 50px;
-	font-weight: bold;
-	float: left;
-	 
-	 	
-
-}
-ul{
-	overflow: auto;
-	float: left;
-	align-items: center;
-	padding-top: 1.0%;
-	padding-left: 15%;
-	 
-
-}
-ul li{
-	display: inline-block;
-	line-height: 100%;
-	margin:0 5px;
-		
-}
-ul li a{
-	color: white;
-	font-size: 19px;
-	text-transform: uppercase;
-	border-radius: 5px;
-	font-weight: bold;
-	 
-}
-a:hover{
-	color: rgb(255, 72, 0);
-	transition: 0.5s ease-in-out;
-}
-.search{
-	 width: 330px;
-	 float: left;
-	 margin-left: 12px;
-	  
-	
-}
-.srch{
-	font-family: 'Times New Roman';
-	width: 200px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid orangered;
-	margin-top:8px;
-	color: white;
-	border-right: none;
-	font-size: 16px;
-	float: left;
-	padding: 10px;
-	border-bottom-left-radius: 5px;
-	border-top-left-radius: 5px;
-
-} 
- 
-.btn{
-	width: 70px;
-	height: 30px;
+.btn {
+    width: 70px;
+    height: 30px;
     background: orangered;
-	border: 3px solid orangered;
-	color: white;
-	cursor: pointer;
-	font-size: 12px;
-	margin-top: 8px;
- 
-  
-	 
+    border: 3px solid orangered;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 8px;
 }
- a{
-	color: red;
-	margin-top: 5px;
-	align-content: center;
+a {
+    color: red;
+    margin-top: 5px;
+    align-content: center;
 }
 
-.btn:focus{
-	 outline: none;
+.btn:focus {
+    outline: none;
 }
-.srch:focus{
-	 outline:none;
+.srch:focus {
+    outline: none;
 }
 
-.back{
-	background:url(mainimg.jpg);
-	background-size: cover;
-	height: 100vh;
-	background-position: center;
-	
+.back {
+    background: url(mainimg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
 }
- 
-  .head{
-	display: inline-block;
-	width:1200px;
-	height: auto;
-	margin: auto;
-	color: orangered;
-	position: relative;
-	padding-left:3%;
-	padding-top:15% ;
-	font-size: 150%;
-	 
 
+.head {
+    display: inline-block;
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: orangered;
+    position: relative;
+    padding-left: 3%;
+    padding-top: 15%;
+    font-size: 150%;
 }
-.para{
-	color: white;
-	padding-top: 15px;
-	padding-bottom: 10px;
-	line-height: 30px;
-	 
- 
+.para {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    line-height: 30px;
 }
-.exp{
-	width: 110px;
-	height: 32px;
-	margin: auto;
-	background:orangered;
-	border-top-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	transition: 0.7s;
-	font-size: 15px;
+.exp {
+    width: 110px;
+    height: 32px;
+    margin: auto;
+    background: orangered;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.7s;
+    font-size: 15px;
+}
+.exp a {
+    color: black;
+    font-weight: bold;
+}
+.exp:hover {
+    display: flexbox;
+    background: white;
+}
 
-}
-.exp a{
-	color: black;
-	font-weight:bold;
-}
- .exp:hover{
-	 display:flexbox;
-	 background: white;
- }
+/* ----------------------------login form--------------------------- */
 
- /* ----------------------------login form--------------------------- */
-
- 
-  .form{ 
-	width: 290px;
-	height: 350px;
-	background: linear-gradient(to top,rgb(4, 6, 5)50%,
-	rgb(5, 6, 5)50%);
-	position: absolute;
-	top: 150px;
-	left:875px;
-	border-radius: 20px;
-	padding: 25px;
-	padding-left: 25px;
-	padding-right:1px;
-
- }
-
-.forget{
-	 font-size: 13px;
-	 margin-top: 15PX;
-	 margin-left: 145px;
-
- }
- .forget a{
-	 color: white;
- }
- .forget a:hover{
-	 color: orangered;
-
- }
-.form h2{
-	width: 240px;
-	text-align: center;
-	font-size: 25px;
-	background-color: orangered;
-	border-radius: 5px;
-	margin: 10px;
-	padding: 2px;
-	color: white;
+.form {
+    width: 290px;
+    height: 350px;
+    background: linear-gradient(to top, rgb(4, 6, 5) 50%, rgb(5, 6, 5) 50%);
+    position: absolute;
+    top: 150px;
+    left: 875px;
+    border-radius: 20px;
+    padding: 25px;
+    padding-left: 25px;
+    padding-right: 1px;
 }
-.form input{
-	width: 220px;
-	height: 30px;
-	font-size: 15px;
-	background: transparent;
-	color: white;
-	border-bottom: 1px solid orangered;
-	margin-left: 25px;
-	border-top:none;
-	border-left: none;
-	border-right:none;
-	margin-top: 10px;
-	outline: none;
-	/* letter-spacing: 0.5px; */
 
-	
+.forget {
+    font-size: 13px;
+    margin-top: 15px;
+    margin-left: 145px;
 }
-.from input:focus{
-	outline:none;
+.forget a {
+    color: white;
+}
+.forget a:hover {
+    color: orangered;
+}
+.form h2 {
+    width: 240px;
+    text-align: center;
+    font-size: 25px;
+    background-color: orangered;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 2px;
+    color: white;
+}
+.form input {
+    width: 220px;
+    height: 30px;
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid orangered;
+    margin-left: 25px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 10px;
+    outline: none;
+    /* letter-spacing: 0.5px; */
+}
+.from input:focus {
+    outline: none;
+}
+::placeholder {
+    color: white;
+}
 
+.form .btnn {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background: orangered;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
 }
-::placeholder{
-	color:white;
+.btnn a {
+    color: white;
 }
- 
-.form .btnn{
-	width:100px;
-	height: 30px;
-	color: white;
-	background:  orangered;
-	text-align: center;
-	margin-left: 90px;
-	margin-top: 20px;
-	font-weight: bold;
-	font-size: 15px;
-	border-radius: 5px;
+.btnn a:hover {
+    color: black;
 }
-.btnn a{
-	color: white;
-}
-.btnn a:hover{
-	color:black ;
-}
-.form .acc{
+.form .acc {
     font-size: 10px;
-	margin-top: 10px;
-	margin-left: 5px;
-	font-size: 20px;
-	text-align: center;
-	color: white;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
 }
- .acc a{
- font-size: 20px;
- color: orangered;
+.acc a {
+    font-size: 20px;
+    color: orangered;
+}
+.acc a:hover {
+    color: blue;
+}
+.lwu {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+.icon {
+    background: rgb(9, 255, 0);
+    background: transparent;
+    margin-top: 25px;
+    text-align: center;
+}
+.fa-brands {
+    margin-right: 20px;
+}
 
-}
-.acc a:hover{
-	color:blue;
-   
-   }
-.lwu{
-	color: white;
-	font-size: 20px;
-	text-align: center;
-	margin-top: 5px;
-}
-.icon{
-	
-	background: rgb(9, 255, 0);
-	background: transparent;
-margin-top: 25px;
-text-align: center;
+/*My Animation
 
-}
-.fa-brands{
-	 margin-right: 20px;
-	 
-	 
-}
- 
- 
- 
+*/
 
- 
+ul li::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to left, rgb(146, 146, 166), red);
+    margin: auto;
+    display: block;
+}
+ul li:hover::after {
+    width: 100%;
+    transition: width 0.3s linear;
+}
+ul li:hover {
+    background: -webkit-linear-gradient(135deg, rgb(216, 216, 228), red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+ul li {
+    font-weight: bold;
+}
+ul li {
+    margin-right: 60px;
+}
