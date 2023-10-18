@@ -1,100 +1,82 @@
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
+    max-height: 96vh;
 }
 
 body {
     font-family: serif;
 }
-/* nav{
-	position: fixed;
-} */
+
 .main {
-    background: linear-gradient(
-        to top,
-        rgba(52, 54, 53) 50%,
-        rgba(52, 54, 53) 50%
-    );
+    background: linear-gradient(to top, rgba(52, 54, 53) 50%, rgba(52, 54, 53) 50%);
     height: 45px;
     width: 100%;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
 }
+
 label.logo {
     color: orangered;
     font-size: 35px;
-    padding: 0 100px;
-    line-height: 50px;
     font-weight: bold;
-    float: left;
 }
+
 ul {
-    overflow: auto;
-    float: left;
+    display: flex;
     align-items: center;
-    padding-top: 1%;
-    padding-left: 15%;
+    gap: 2rem;
 }
-ul li {
-    display: inline-block;
-    line-height: 100%;
-    margin: 0 5px;
-}
+
 ul li a {
     color: white;
     font-size: 19px;
     text-transform: uppercase;
-    border-radius: 5px;
     font-weight: bold;
-}
-a:hover {
-    color: rgb(255, 72, 0);
     transition: 0.5s ease-in-out;
 }
-.search {
-    width: 330px;
-    float: left;
-    margin-left: 12px;
+
+ul li:hover a {
+    color: rgb(255, 72, 0);
 }
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
 .srch {
     font-family: "Times New Roman";
     width: 200px;
     height: 30px;
     background: transparent;
     border: 1px solid orangered;
-    margin-top: 8px;
     color: white;
     border-right: none;
     font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    padding: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-left-radius: 1px;
+    outline: none;
 }
 
 .btn {
-    width: 70px;
-    height: 30px;
+    width: auto;
+    height: auto;
     background: orangered;
     border: 3px solid orangered;
     color: white;
     cursor: pointer;
     font-size: 12px;
-    margin-top: 8px;
-}
-a {
-    color: red;
-    margin-top: 5px;
-    align-content: center;
-}
-
-.btn:focus {
-    outline: none;
-}
-.srch:focus {
-    outline: none;
 }
 
 .back {
@@ -106,21 +88,28 @@ a {
 
 .head {
     display: inline-block;
-    width: 1200px;
+    width: 700px;
     height: auto;
     margin: auto;
     color: orangered;
     position: relative;
-    padding-left: 3%;
-    padding-top: 15%;
+    padding-left: 35px;
+    padding-top: 200px;
     font-size: 150%;
 }
+
+h1 {
+    margin-left: 150px;
+}
+
 .para {
     color: white;
     padding-top: 15px;
     padding-bottom: 10px;
     line-height: 30px;
+    text-align: center;
 }
+
 .exp {
     width: 110px;
     height: 32px;
@@ -130,21 +119,22 @@ a {
     border-bottom-right-radius: 5px;
     transition: 0.7s;
     font-size: 15px;
+    margin-left: 265px;
 }
+
 .exp a {
     color: black;
     font-weight: bold;
 }
+
 .exp:hover {
-    display: flexbox;
+    display: flex;
     background: white;
 }
 
-/* ----------------------------login form--------------------------- */
-
 .form {
-    width: 290px;
-    height: 350px;
+    width: 350px;
+    height: 400px;
     background: linear-gradient(to top, rgb(4, 6, 5) 50%, rgb(5, 6, 5) 50%);
     position: absolute;
     top: 150px;
@@ -152,7 +142,7 @@ a {
     border-radius: 20px;
     padding: 25px;
     padding-left: 25px;
-    padding-right: 1px;
+    margin-right: 1px;
 }
 
 .forget {
@@ -160,14 +150,17 @@ a {
     margin-top: 15px;
     margin-left: 145px;
 }
+
 .forget a {
     color: white;
 }
+
 .forget a:hover {
     color: orangered;
 }
+
 .form h2 {
-    width: 240px;
+    width: auto;
     text-align: center;
     font-size: 25px;
     background-color: orangered;
@@ -176,8 +169,9 @@ a {
     padding: 2px;
     color: white;
 }
+
 .form input {
-    width: 220px;
+    width: calc(100% - 50px);
     height: 30px;
     font-size: 15px;
     background: transparent;
@@ -189,33 +183,37 @@ a {
     border-right: none;
     margin-top: 10px;
     outline: none;
-    /* letter-spacing: 0.5px; */
-}
-.from input:focus {
-    outline: none;
-}
-::placeholder {
-    color: white;
 }
 
 .form .btnn {
-    width: 100px;
+    width: calc(100% - 50px);
     height: 30px;
     color: white;
     background: orangered;
     text-align: center;
-    margin-left: 90px;
+    margin-left: 25px;
     margin-top: 20px;
     font-weight: bold;
     font-size: 15px;
     border-radius: 5px;
 }
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
 .btnn a {
     color: white;
 }
+
 .btnn a:hover {
     color: black;
 }
+
 .form .acc {
     font-size: 10px;
     margin-top: 10px;
@@ -224,54 +222,253 @@ a {
     text-align: center;
     color: white;
 }
+
 .acc a {
     font-size: 20px;
     color: orangered;
 }
+
 .acc a:hover {
     color: blue;
 }
+
 .lwu {
     color: white;
     font-size: 20px;
     text-align: center;
     margin-top: 5px;
 }
+
 .icon {
     background: rgb(9, 255, 0);
     background: transparent;
     margin-top: 25px;
     text-align: center;
 }
+
 .fa-brands {
     margin-right: 20px;
 }
 
-/*My Animation
+/* Media Queries for Responsive Design */
 
-*/
+@media (max-width: 1240px) {
+    .para {
+        width: 500px;
+    }
 
-ul li::after {
-    content: "";
-    width: 0;
-    height: 3px;
-    background: linear-gradient(to left, rgb(146, 146, 166), red);
-    margin: auto;
-    display: block;
+    h1 {
+        margin-left: 80px;
+    }
+
+    .exp {
+        margin-left: 190px;
+    }
+
+    .form {
+        width: 350px;
+        height: 400px;
+        position: absolute;
+        top: 150px;
+        left: 800px;
+    }
 }
-ul li:hover::after {
-    width: 100%;
-    transition: width 0.3s linear;
+
+@media (max-width: 1170px) {
+    .form {
+        left: 700px;
+    }
 }
-ul li:hover {
-    background: -webkit-linear-gradient(135deg, rgb(216, 216, 228), red);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
+
+@media (max-width: 1080px) {
+    .form {
+        left: 600px;
+    }
+
+    label.logo {
+        font-size: 30px;
+    }
+
+    ul li a {
+        font-size: 15px;
+    }
 }
-ul li {
-    font-weight: bold;
+
+@media (max-width: 975px) {
+    .para {
+        width: 450px;
+    }
+
+    .form {
+        left: 540px;
+    }
+
+    label.logo {
+        font-size: 25px;
+    }
+
+    ul li a {
+        font-size: 14px;
+        margin-left: 2px;
+    }
+
+    .srch {
+        width: 130px;
+    }
+
+    ul {
+        gap: 1rem;
+    }
 }
-ul li {
-    margin-right: 60px;
+
+@media (max-width: 915px) {
+    .para {
+        width: 500px;
+        margin-left: 130px;
+        
+    }
+.head{
+    padding-top: 40px;
+}
+    .form {
+        left: 220px;
+        margin-top: 220px;
+        width: 50vw;
+    }
+
+    h1 {
+        margin-left: 200px;
+    }
+
+    .exp {
+        margin-left: 330px;
+    }
+}
+
+@media (max-width: 775px) {
+    .para {
+        width: 500px;
+        margin-left: 85px;
+        
+    }
+.head{
+    padding-top: 0px;
+}
+    .form {
+        left: 180px;
+        margin-top: 150px;
+        width: 50vw;
+    }
+
+    h1 {
+        margin-left: 170px;
+    }
+
+    .exp {
+        margin-left: 280px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .para {
+        width: 500px;
+        margin-left: 40px;
+        
+    }
+.head{
+    padding-top: 0px;
+}
+    .form {
+        left: 150px;
+        margin-top: 150px;
+        width: 50vw;
+    }
+
+    h1 {
+        margin-left: 120px;
+    }
+
+    .exp {
+        margin-left: 220px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .para {
+        width: 500px;
+        margin-left: 10px;
+        
+    }
+.head{
+    padding-top: 0px;
+}
+    .form {
+        left: 130px;
+        margin-top: 150px;
+        width: 50vw;
+    }
+
+    h1 {
+        margin-left: 90px;
+    }
+
+    .exp {
+        margin-left: 200px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .form {
+        left: 100px;
+        margin-right: 0vh;
+
+       width: 300px;
+    }
+
+    .para {
+        width: 420px;
+        margin-left: 8px;
+        
+    }
+
+    h1 {
+        margin-left: 35px;
+    }
+
+    .exp {
+        margin-left: 160px;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+    .form {
+        left: 25px;
+        margin-right: 0vh;
+        margin-top: 130px;
+
+       width: 300px;
+    }
+
+    .para {
+        width: 300px;
+        margin-left: 0px;
+        font-size: 15px;
+        
+        
+    }
+
+    h1 {
+        margin-left: 0px;
+        font-size: 30px;
+    }
+
+    .exp {
+        margin-left: 80px;
+    }
+
 }
